@@ -1,5 +1,18 @@
 # RabbitMQ data sending and receiving
 
+### Connection
+```
+<appSettings>
+    <add key="RabbitMQHostName" value="192.168.1.165" />
+    <add key="RabbitMQUserName" value="biplob" />
+    <add key="RabbitMQPassword" value="123456" />
+    <add key="RabbitMQPort" value="5672" />
+</appSettings>
+```
+### Browser URL
+```
+http://192.168.1.165:15672
+```
 #### Sender
 ```
 using RabbitMQ.Client;
