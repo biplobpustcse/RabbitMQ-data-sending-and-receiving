@@ -47,7 +47,6 @@ namespace CloudPos.RabbitMQ
         #region ########## common method ##########
         private void Connect()
         {
-
             if (connection != null && connection.IsOpen && channel != null && channel.IsOpen)
             {
                 //no need to create connection
