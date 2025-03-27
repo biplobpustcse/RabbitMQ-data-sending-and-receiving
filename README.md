@@ -169,7 +169,7 @@ namespace CloudPos.RabbitMQ
             shopList = _storeService.GetALLStoreList(COMPANY_CODE, "CENTRALSTORE", username, password).Where(x => x.STATUS == "ACTIVE").ToList(); ;
 
             long customerIteration = 0;
-        // Define a label
+        //  Define a label
         GetCustomers:
             var items = customerService.GetCustomerForSendingByRabbitMQ(username, password);
             if (items.Count > 0)
